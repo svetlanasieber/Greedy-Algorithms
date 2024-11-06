@@ -11,7 +11,7 @@ vector<int> makeChange(int amount, const vector<int>& coins) {
 
     for (int i = 0; i < coins.size(); ++i) {
         while (amount >= sortedCoins[i]) {
-            // Add the largest coin that is less than or equal to the remaining amount
+         
             result.push_back(sortedCoins[i]);
             amount -= sortedCoins[i];
         }
